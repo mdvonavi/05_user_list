@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.wrapper{
+    display: flex;
+    margin-top: 69px;
+    margin-left: 82px;
+}
+
+
+
+.user{
+    border: 1px solid black;
+    display: flex;
+    width: 380px;
+    margin-top: 5px;
+
+    &:first-child{
+        margin-top: 0;
+    }
+
+    &_full_name{
+        width: 106px;
+        margin: auto 0;
+    }
+    
+    &_photo{
+        height: 80px;
+        width: 80px;
+        background: url(img/user.png) no-repeat;  
+        margin: 5px;
+    }
+}
+
+.users{
+    margin-right: 50px;
+}
+
+.new_user{
+    display: grid;
+
+    &_create{
+        width: 160px;
+        height: 25px;
+    }
+
+    &_form{
+        margin-top: 15px;
+        width: 345px;
+        height: 245px;
+        border: 1px solid #000;
+        display: none;
+
+        &_head{
+            font-size: 18px;
+            text-align: center;
+        }
+
+        &_unit{
+            display: flex;
+            margin-left: 40px;
+            padding-top: 10px;
+        
+            &_text{
+                margin: auto 0;
+                width: 100px;
+                height: 25px;
+            }
+
+            &_input_fname, &_input_lname, &_input_email, &_input_age, &_input_city{
+                height: 20px;
+                padding: 0;
+            }
+
+            &_buttons{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 12px;
+            }
+            
+        }
+    }
+}
